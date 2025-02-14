@@ -27,7 +27,7 @@ function moveSlide(direction) {
 }
 window.onload = function() {
     showMobile('Assets/Mobile/s25ultra.webp');
-    showTv('Assets/TV/moniter.png');
+    showTv('Assets/TV/moniter.PNG');
     showApp('Assets/Appliance/ac.png');
     document.getElementById('DefaultButton').focus();
 
