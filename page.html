@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Samsung Landing Page</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "logo" id = "#">SAMSUNG</div>
+            <ul>
+                <a href = "#home"></a>
+                <li><a href = "#mobile">Mobile</a></li>
+                <li><a href = "#tv">TV</a></li>
+                <li><a href = "#appliances">Appliances</a></li>
+                <li><a href = "#accessories">Accessories</a></li>
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class = "container">
+            <div class = "carousel">
+                <div class = "carousel-images">
+                    <div class = "carousel-item active">
+                        <div class = "overlay1">
+                            Galaxy S25 Ultra<br>
+                            <a href = "#" class = "buy-button">Buy now</a>
+                        </div>
+                        <img src = "Assets/Display/image1.webp" alt = "Image 1">
+                    </div>
+                    <div class = "carousel-item">
+                        <div class = "overlay">
+                            Experience a new era<br> of Samsung AI TV<br>
+                            <a href = "#" class = "buy-button">Buy now</a>
+                        </div>
+                        <img src = "Assets/Display/tv.webp" alt = "Image 2">
+                    </div>
+                    <div class = "carousel-item">
+                        <div class = "overlay">
+                            Bespoke Double-Door<br>Refrigerator<br>
+                            <a href = "#" class = "buy-button1">Buy now</a>
+                        </div>
+                        <img src = "Assets/Display/fridge.png" alt = "Image 3">
+                    </div>
+                </div>
+                <button class = "prev" onclick = "moveSlide(-1)">&#11164;</button>
+                <button class = "next" onclick = "moveSlide(1)">&#11166;</button>
+            </div>
+            <div id = "mobile">
+                <h1 >Mobile</h1>
+                <p>Discover the latest in technology and innovation</p>
+                <div id = "hero">
+                    <nav> 
+                        <ul>
+                            <li><button onclick = "showMobile('Assets/Mobile/s25ultra.webp')" id = "DefaultButton">Galaxy S25 Ultra</button></li>
+                            <li><button onclick = "showMobile('Assets/Mobile/s25series.png')">Galaxy S25 Series</button></li>
+                            <li><button onclick = "showMobile('Assets/Mobile/tabS10.png')">Galaxy S10 Tab</button></li>
+                        </ul>
+                    </nav>
+                    <a href = "#" class = "buy-button-mobile">Buy now</a>
+                    <div class = "mobile-display"></div>
+                    </div>
+                </div>
+            </div>
+            <div id = "tv">
+                <h1 >TV & AV</h1>
+                <div id = "hero1">
+                    <nav> 
+                        <ul>
+                            <li><button onclick = "showTv('Assets/TV/moniter.png')">Monitor</button></li>
+                            <li><button onclick = "showTv('Assets/TV/qled.png')">Neo QLED 8K</button></li>
+                            <li><button onclick = "showTv('Assets/TV/frame.png')">The Frame</button></li>
+                        </ul>
+                    </nav>
+                    <a href = "#" class = "buy-button-mobile">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div id = "appliances">
+                <h1 >Home Appliances</h1>
+                <div id = "hero2">
+                    <nav> 
+                        <ul>
+                            <li><button onclick = "showApp('Assets/Appliance/ac.png')" id = "alt">WindFree AC</button></li>
+                            <li><button onclick = "showApp('Assets/Appliance/laundry.png')" id = "alt">AI Laundry</button></li>
+                            <li><button onclick = "showApp('Assets/Appliance/sbsfridge.png')" id = "alt">Side-by-Side Refrigerator</button></li>
+                        </ul>
+                    </nav>
+                    <a href = "#" class = "buy-button-mobile">Buy now</a>
+                    <div class = "mobile-display"></div>
+                    </div>
+                </div>
+            </div>
+        <section id = "accessories">
+            <h2>Accessories</h2>
+            <div class = "product-grid">
+                <div class = "product-card">
+                    <img src = "Assets/Accessories/gbuds.avif" height = 200 width = 200 alt = "Galaxy Buds3">
+                    <h3>Galaxy Buds3</h3>
+                    <a href = "#" class = "buy-button-acc">Buy now</a>
+                </div>
+                <div class = "product-card">
+                    <img src = "Assets/Accessories/gring.avif" height = 200 width = 200 alt = "Galaxy Ring">
+                    <h3>Galaxy Ring</h3>
+                    <a href = "#" class = "buy-button-acc">Buy now</a>
+                </div>
+                <div class = "product-card">
+                    <img src = "Assets/Accessories/gwatch.avif" height = 200 width = 200alt = "Samsung Galaxy Watch">
+                    <h3>Galaxy Watch</h3>
+                    <a href = "#" class = "buy-button-acc">Buy now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class = "footer-content">
+            <div class = "footer-section">
+                <h4>About Samsung</h4>
+                <p>Leading the future of electronics</p>
+            </div>
+            <div class = "footer-section">
+                <h4>Connect With Us</h4>
+                <div class = "social-icons" id = "contact">
+                    <a href = "#" ><img src = "Assets/Social/facebook.png"></a>
+                    <a href = "#" ><img src = "Assets/Social/twitter.png"></a>
+                    <a href = "#" ><img src = "Assets/Social/instagram.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src = "script.js"></script>
+</body>
+</html>
